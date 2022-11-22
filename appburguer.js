@@ -28,6 +28,7 @@ const Total=document.getElementById('total');
 const Total1=document.getElementById('total1');
 const Tota2=document.getElementById('total2');
 
+let arrayburguer=[]
 
 //funciones
 function precio(burger,num,Total){ 
@@ -68,6 +69,8 @@ button0.addEventListener('click',()=>{
         const Botontext= 'borrar'; 
         Boton.innerHTML=Botontext
         divElement.appendChild(Boton)
+        arrayburguer.push(cheemsBurguer)
+
         }
         )
 button1.addEventListener('click',()=>{
@@ -94,6 +97,7 @@ button1.addEventListener('click',()=>{
         const Botontext= 'borrar'; 
         Boton.innerHTML=Botontext
         divElement.appendChild(Boton)
+        arrayburguer.push(Clasica)
             }
         )
 button2.addEventListener('click',()=>{
@@ -120,6 +124,7 @@ button2.addEventListener('click',()=>{
         const Botontext= 'borrar'; 
         Boton.innerHTML=Botontext
         divElement.appendChild(Boton)
+        arrayburguer.push(ClasicaDoble)
             }
         )
 button3.addEventListener('click',()=>{
@@ -147,6 +152,7 @@ button3.addEventListener('click',()=>{
         const Botontext= 'borrar'; 
         Boton.innerHTML=Botontext
         divElement.appendChild(Boton)
+        arrayburguer.push(TriFuerza)
             }
         )
 button4.addEventListener('click',()=>{
@@ -174,6 +180,7 @@ button4.addEventListener('click',()=>{
         const Botontext= 'borrar'; 
         Boton.innerHTML=Botontext
         divElement.appendChild(Boton)
+        arrayburguer.push(Empagueza)
             }
         )
 button6.addEventListener('click',()=>{
@@ -181,5 +188,6 @@ button6.addEventListener('click',()=>{
     const Tprice=Pricesuma-78
     totaprecio.innerHTML=Tprice
     parseInt(alert('tu compra total es de'+Tprice +' usd' ))
+    localStorage.setItem('total',JSON.stringify(arrayburguer))
 })   
 
