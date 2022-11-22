@@ -187,7 +187,7 @@ button6.addEventListener('click',()=>{
     const Pricesuma=cheemsBurguer.price+Clasica.price+ClasicaDoble.price+TriFuerza.price+Empagueza.price
     const Tprice=Pricesuma-78
     totaprecio.innerHTML=Tprice
-    parseInt(alert('tu compra total es de'+Tprice +' usd' ))
+    parseInt(alert('tu compra total es de '+Tprice +' usd' ))
     localStorage.setItem('total',JSON.stringify(arrayburguer))
 })   
 
