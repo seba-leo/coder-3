@@ -86,14 +86,12 @@ button1.addEventListener('click',()=>{
                 <img src="https://www.clarin.com/img/2022/05/27/xP5S1HdN4_720x0__1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                 <p class="card-text">La ${Clasica.nombre} es una hamburguesa de carne con cheddar, ${Clasica.tamaño} y sale 13 usd </p></div>`;
-        divElement.innerHTML=content;
-        
+        divElement.innerHTML=content;   
         caja.append(divElement)
-
-            precio(Clasica,13,Total1)
-
+        precio(Clasica,13,Total1)
         //Elimina elementos creados
         const Boton=document.createElement('button')
+        Boton.setAttribute('class','btn btn-primary')
         Boton.addEventListener('click',()=>{
         Borrar1=document.getElementById('caja')
         Borrar2=document.getElementById('Box2')
@@ -120,6 +118,7 @@ button2.addEventListener('click',()=>{
         precio(ClasicaDoble,15,total2)
         //Elimina elementos creados
         const Boton=document.createElement('button')
+        Boton.setAttribute('class','btn btn-primary')
         Boton.addEventListener('click',()=>{
         Borrar1=document.getElementById('caja')
         Borrar2=document.getElementById('Box3')
@@ -146,6 +145,7 @@ button3.addEventListener('click',()=>{
         precio(TriFuerza,20,total3)
         //Elimina elementos creados
         const Boton=document.createElement('button')
+        Boton.setAttribute('class','btn btn-primary')
         Boton.addEventListener('click',()=>{
         Borrar1=document.getElementById('caja')
         Borrar2=document.getElementById('Box4')
@@ -171,6 +171,7 @@ button4.addEventListener('click',()=>{
         precio(Empagueza,25,total4)
         //Elimina elementos creados
         const Boton=document.createElement('button')
+        Boton.setAttribute('class','btn btn-primary')
         Boton.addEventListener('click',()=>{
         Borrar1=document.getElementById('caja')
         Borrar2=document.getElementById('Box5')
