@@ -47,7 +47,7 @@ button0.addEventListener('click',()=>{
         divElement.setAttribute('id','Box1');
         let content= `
             <div class="card" style="width: 18rem;">
-            <img src="https://www.hogar.mapfre.es/media/2018/09/hamburguesa-sencilla.jpg" class="card-img-top" alt="...">
+            <img src="https://pbs.twimg.com/media/E9u4hcMXMAkAtr6?format=jpg&name=large" class="card-img-top" alt="...">
             <div class="card-body">
             <p class="card-text">La ${cheemsBurguer.nombre} es una hamburguesa con un medallon de carne y salsa barbacoa, es de tamaño  ${cheemsBurguer.tamaño} y sale 5 usd </p></div>`;
         divElement.innerHTML=content;
